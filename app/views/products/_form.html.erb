@@ -1,0 +1,17 @@
+<%= form_for @product do |field| %>
+	<p>
+		<%= field.label "name" %><br>
+		<%= field.text_field "name" %>
+	</p>
+	<p>
+		<%= field.label "description" %><br>
+		<%= field.text_field "description" %>
+	</p>
+	<p>
+		<%= field.label "price_in_cents" %><br>
+		<%= field.text_field "price_in_cents" %>
+	</p>
+  	<p>
+    	<%= submit_tag "Save" %>
+  	</p>
+<% end %>
